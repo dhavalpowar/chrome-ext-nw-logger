@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+
+  "name": "MockIt Network Interceptor",
+  "description": "This extension creates MockIt endpoints for user's HTTP requests.",
+  "version": "1.0",
+  "browser_action": {
+    "default_icon": "images/icon.png",
+    "default_popup": "popup.html",
+    "default_title": "Start recording MockIt endpoints"
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "background",
+    "webRequest",
+    "<all_urls>"
+  ]
+}
